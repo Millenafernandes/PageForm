@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+
+    <link rel="stylesheet" href="style.css">
+    
+    </head>
+
+    <body>
+      <div>
+    <h1>Bem-vindo a (Empresa fictícia)</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At quo quae molestiae, quas nostrum magni debitis quod, deleniti doloremque enim unde amet earum aut nulla rerum laudantium. Maxime, tempora quibusdam!</p>
+ 
+    <form>
+    <input class="input_required" type = "text" placeholder="Nome Completo" oninput="validarNome()">
+    <span class="span_required">Digite um nome válido</span>
+    <input class="input_required" type="email" placeholder="Email">
+    <span class="span_required">Digite um email válido</span>
+    <input class="input_required" type="text" placeholder="CPF" autocomplete="off" maxlength="14" id="CPF">
+    <span class="span_required">Digite um CPF válido</span>
+    <input class="input_required" type="password" placeholder="Senha">
+    <span class="span_required">Digite uma senha válida</span>
+    <input class="input_required" type="password" placeholder="Confirme sua senha">
+    <span class="span_required">As senhas devem ser iguais</span>
+
+    <h3><strong> Qual sua data de nascimento?</strong></h3>
+    
+    <input type="date">
+
+    <h3><strong> Nível de escolaridade?</strong></h3>
+    <select name="select">
+        <option value="valor1">Ensino Básico</option>
+        <option value="valor2" >Ensino Médio</option>
+        <option value="valor3" >Ensino Superior</option>
+        
+      </select>
+      <h3><strong> Qual o seu gênero?</strong></h3>
+      
+      <section>
+      <input type="radio" name="sexo" />Masculino
+      <input type="radio" name="sexo" />Feminino
+     
+      </section>
+
+      <h3><strong> Como você conheceu nossa empresa?</strong></h3>
+       
+     
+      
+      
+          <div class="checkboxes">
+        
+            <label><input type="checkbox"/>TV</label>
+        
+            <label><input type="checkbox"/>Internet</label>
+        
+            <label><input type="checkbox"/>Indicação</label>
+            
+            <label><input type="checkbox"/>Outros</label>
+        
+          </div>
+        
+        
+      
+      <div class="CaixadeTexto">
+      <label for="textarea">Observações: </label>
+      <textarea></textarea>
+      </div>
+     
+      <input id="btn" type="submit" value="Enviar">
+    </form>  
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
